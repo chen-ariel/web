@@ -1,49 +1,79 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>圖片展示</title>
+    <title>我的 GitHub Pages 網站</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: #555;
         }
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-        .section {
-            width: 80%;
-            text-align: center;
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         img {
             width: 100%;
-            max-width: 600px;
-            height: auto;
             border-radius: 10px;
         }
-        h2 {
-            margin-bottom: 10px;
+        button {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #0056b3;
         }
     </style>
 </head>
 <body>
+
+    <header>歡迎來到我的 GitHub Pages 網站！</header>
+
+    <nav>
+        <a href="#">首頁</a>
+        <a href="#">關於我</a>
+        <a href="#">聯絡我</a>
+    </nav>
+
     <div class="container">
-        <div class="section">
-            <h2>咖啡與冰淇淋</h2>
-            <img src="截圖 2025-02-22 上午11.14.44.png" alt="Coffee and Ice Cream">
-        </div>
-        <div class="section">
-            <h2>攝影與登山</h2>
-            <img src="截圖 2025-02-22 上午11.15.01.png" alt="Photography and Hiking">
-        </div>
-        <div class="section">
-            <h2>台灣與大學</h2>
-            <img src="截圖 2025-02-22 上午11.14.31.png" alt="Taiwan and Universities">
-        </div>
+        <h1>你好！這是我的個人網站</h1>
+        <p>這個網站是使用 GitHub Pages 建立的。歡迎來到這裡！</p>
+        <img src="https://source.unsplash.com/800x400/?nature,landscape" alt="美麗的風景">
+        <button onclick="alert('謝謝你的來訪！')">點我一下</button>
     </div>
+
 </body>
 </html>
